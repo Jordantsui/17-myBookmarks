@@ -1,0 +1,28 @@
+*{margin:0;padding: 0;}
+a{text-decoration: none;}
+kbd{border: 1px solid red;width: 4em;height: 4em;display: inline-block;
+text-transform: uppercase;position: relative;
+}
+/*kbd默认是内联元素，无法改变宽高，所以加了display*/
+/*text-transform将小写字母变成大写字母*/
+kbd>button{
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+kbd:hover>button{
+	display: inline-block;
+}
+/*鼠标浮到此kbd上，button才出现*/
+main{text-align: center;}
+#zhangsan{
+	display: inline-block;
+}
+/*css里用到id需要在其名字前加#*/
+#zhangsan>div:nth-child(2){
+	margin-left: 2em;
+}
+#zhangsan>div:nth-child(3){
+	margin-left: 4em;
+}
